@@ -1,0 +1,8 @@
+<?php
+
+// [DATABASE]
+define('HOSTNAME', 'localhost');
+define('USERNAME', 'root');
+define('PASSWORD', '');
+define('DATABASE', 'twitter');
+$con = new mysqli(HOSTNAME, USERNAME, PASSWORD, DATABASE);

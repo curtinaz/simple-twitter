@@ -3,7 +3,7 @@
 class Usuarios {
     public function home(){
         if(empty($_COOKIE['token'])) {
-            setcookie('token', 'teste');
+            // setcookie('token', 'teste');
             require 'views/login.php';
             die();
         }

@@ -2,6 +2,11 @@
 
 class Usuarios {
     public function home(){
+        if(empty($_COOKIE['token'])) {
+            setcookie('token', 'teste');
+            require 'views/login.php';
+            die();
+        }
         require 'views/home.php';
     }
 }
